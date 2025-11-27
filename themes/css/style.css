@@ -1,0 +1,98 @@
+.chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.chat-header {
+display: flex; /* Atur elemen dalam header sejajar horizontal */
+align-items: center; /* Posisikan elemen secara vertikal */
+justify-content: center; /* Pusatkan teks "Chat dengan Management" */
+background-color: #007bff; /* Warna latar belakang header */
+color: white; /* Warna teks */
+padding: 10px 15px; /* Jarak dalam */
+font-size: 18px;
+font-weight: bold;
+border-radius: 5px 5px 0 0; /* Membulatkan sudut atas */
+position: relative; /* Memungkinkan elemen lain diposisikan absolut */
+}
+
+.home-link {
+position: absolute; /* Buat tombol Home tetap di kiri */
+left: 15px; /* Jarak tombol dari tepi kiri */
+text-decoration: none; /* Hilangkan garis bawah */
+color: white; /* Warna teks */
+font-size: 16px;
+}
+
+.home-link .arrow {
+margin-right: 5px; /* Spasi antara ikon panah dan teks */
+font-size: 18px; /* Ukuran ikon panah */
+}
+
+.home-link:hover {
+color: #dfe6f1; /* Warna teks saat tombol disorot */
+}
+
+.chat-title {
+text-align: center; /* Pastikan teks berada di tengah */
+width: 100%; /* Isi seluruh ruang header untuk pusat */
+}
+
+
+.chat-body {
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+.chat-message {
+    margin: 10px 0;
+    display: flex;
+}
+.chat-message.sender {
+    justify-content: flex-end;
+}
+.chat-message.receiver {
+    justify-content: flex-start;
+}
+.message-bubble {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+.message-bubble.sender {
+    background: #007bff;
+    color: white;
+    border-bottom-right-radius: 0;
+}
+.message-bubble.receiver {
+    background: #e4e6eb;
+    color: black;
+    border-bottom-left-radius: 0;
+}
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+.chat-footer input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+.chat-footer button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
