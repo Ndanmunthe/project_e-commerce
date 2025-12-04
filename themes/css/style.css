@@ -57,13 +57,13 @@
     }
 
     .produk-list {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 2fr);
     }
 }
 
 /* RESPONSIVE HP KECIL */
 @media (max-width: 480px) {
     .produk-list {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 2fr);
     }
 }
