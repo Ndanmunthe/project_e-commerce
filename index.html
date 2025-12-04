@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#333" />
     <meta http-equiv="refresh" content="0; url=home/index.html">
 </head>
 <body>
+  <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("sw.js")
+                .then(() => console.log("SW Registered"))
+                .catch(err => console.log("SW Failed:", err));
+        }
+    </script>
 </body>
 </html>
