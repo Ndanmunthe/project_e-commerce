@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mahkota Sport🎵⚽</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap style -->
+    <link rel="stylesheet" href="../themes/bootshop/bootstrap.min.css" />
+    <link rel="stylesheet" href="../themes/css/base.css" />
+    <link rel="stylesheet" href="../themes/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="../themes/css/font-awesome.css" />
+    <link rel="stylesheet" href="../themes/js/google-code-prettify/prettify.css" />
+    <link rel="stylesheet" href="../themes/css/style.css">
+
+    <link rel="shortcut icon" href="../themes/images/logo.png" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header">
+        <div class="container">
+          <!-- WELCOME LINE (Opsional) -->
+<div id="welcomeLine" class="row">
+    <span class="pull-left">Selamat datang di Mahkota Sport</span>
+</div>
+
+<!-- NAVBAR -->
+<div id="logoArea" class="navbar">
+    <div class="navbar-inner">
+        <a class="brand" href="home.html">
+            <img src="../themes/images/logo.png" width="150" alt="Mahkota Sport" />
+        </a>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <!-- SLIDER -->
+    <div id="carouselBlk">
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+
+            <div class="item active">
+                <div class="container">
+                    <a href="#"><img style="width:50%" src="../themes/images/carousel/1.jpg" alt="Carousel 1" /></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="container">
+                    <a href="#"><img style="width:57.8%" src="../themes/images/carousel/2.jpg" alt="Carousel 2" /></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="container">
+                    <a href="#"><img style="width:32.7%" src="../themes/images/carousel/3.jpg" alt="Carousel 3" /></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="container">
+                    <a href="#"><img style="width:43.3%" src="../themes/images/carousel/4.jpg" alt="Carousel 4" /></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="container">
+                    <a href="#"><img style="width:24.4%" src="../themes/images/carousel/5.jpeg" alt="Carousel 5" /></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="container">
+                    <a href="#"><img style="width:32.5%" src="../themes/images/carousel/6.jpg" alt="Carousel 6" /></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+</div>
+
+
+    <!-- MAIN BODY -->
+    <div id="mainBody">
+        <div class="container">
+            <div class="row">
+                <!-- CONTENT -->
+                <div class="span9" id="content-placeholder">
+
+                    <!-- Contoh produk statis -->
+                    <main class="produk-section">
+
+            <div class="produk-list">
+
+                <div class="produk-card">
+                    <img src="../themes/images/produk/sample1.jpg" alt="">
+                    <h4>Nama Produk</h4>
+                    <p>Deskripsi singkat produk.</p>
+                    <button>Lihat</button>
+                </div>
+
+                <div class="produk-card">
+                    <img src="../themes/images/produk/sample2.jpg" alt="">
+                    <h4>Nama Produk 2</h4>
+                    <p>Deskripsi singkat produk.</p>
+                    <button>Lihat</button>
+                </div>
+
+                <div class="produk-card">
+                    <img src="../themes/images/produk/sample3.png" alt="">
+                    <h4>Nama Produk</h4>
+                    <p>Deskripsi singkat produk.</p>
+                    <button>Lihat</button>
+                </div>
+
+                <div class="produk-card">
+                    <img src="../themes/images/produk/sample4.jpg" alt="">
+                    <h4>Nama Produk 2</h4>
+                    <p>Deskripsi singkat produk.</p>
+                    <button>Lihat</button>
+                </div>
+
+            </div>
+        </main>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container">
+        <footer class="footer">
+        <p>© Munthe - All rights reserved.</p>
+
+        <div class="sosmed">
+            <span><img width="40" height="40" src="../themes/images/facebook.png" alt="Facebook" /></span>
+            <span><img width="40" height="40" src="../themes/images/twitter.png" alt="Twitter" /></span>
+            <span><img width="40" height="40" src="../themes/images/youtube.png" alt="YouTube" /></span>
+        </div>
+    </footer>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../themes/js/jquery.js"></script>
+    <script src="../themes/js/bootstrap.min.js"></script>
+    <script src="../themes/js/google-code-prettify/prettify.js"></script>
+    <script src="../themes/js/bootshop.js"></script>
+    <script src="../themes/js/jquery.lightbox-0.5.js"></script>
+
+    <!-- LOAD HTML PARTIALS -->
+    <script>
+        // NAVBAR
+        fetch("../template/navbar.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("navbar-placeholder").innerHTML = data);
+
+        // SLIDER
+        fetch("../template/slider.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("slider-placeholder").innerHTML = data);
+
+        // SIDEBAR
+        fetch("../template/sidebar.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("sidebar-placeholder").innerHTML = data);
+
+        // FOOTER
+        fetch("../template/footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    </script>
+
+</body>
+
+</html>
