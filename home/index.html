@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../themes/css/style.css">
 
     <link rel="shortcut icon" href="../themes/images/logo.png" />
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#333" />
 </head>
 
 <body>
@@ -179,8 +181,13 @@
         fetch("../template/footer.html")
             .then(res => res.text())
             .then(data => document.getElementById("footer-placeholder").innerHTML = data);
-    </script>
 
+            if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("project_e-commerce/sw.js")
+                .then(() => console.log("SW Registered"))
+                .catch(err => console.log("SW Failed:", err));
+        }
+    </script>
 </body>
 
 </html>
