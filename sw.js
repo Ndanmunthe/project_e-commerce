@@ -3,7 +3,6 @@ const urlsToCache = [
   "/project_e-commerce/",
   "/project_e-commerce/index.html",
   "/project_e-commerce/manifest.json",
-  "/project_e-commerce/home/index.html",
   "/project_e-commerce/themes/bootstrap/bootstrap.min.css",
   "/project_e-commerce/themes/css/base.css",
   "/project_e-commerce/themes/css/bootstrap-responsive.min.css",
